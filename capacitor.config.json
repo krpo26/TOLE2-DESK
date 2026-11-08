@@ -1,0 +1,8 @@
+{
+  "appId": "app.despiece.vehiculos",
+  "appName": "Despiece",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

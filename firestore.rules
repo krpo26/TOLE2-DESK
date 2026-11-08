@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Cualquiera puede LEER las piezas; nadie puede escribir desde la app.
+    // Los cambios se cargan desde la consola de Firebase o con tools/seed.mjs.
+    match /piezas/{id} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

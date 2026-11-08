@@ -1,0 +1,12 @@
+{
+  "name": "Despiece Auto y Moto",
+  "short_name": "Despiece",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#171b1f",
+  "theme_color": "#171b1f",
+  "lang": "es",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#171b1f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<title>Despiece Auto y Moto</title>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="brand">Despiece</div>
+    <div class="vtabs" role="tablist">
+      <button class="vtab active" data-v="auto" type="button">Auto</button>
+      <button class="vtab" data-v="moto" type="button">Moto</button>
+    </div>
+  </div>
+  <div id="status" class="status ok">En línea</div>
+</header>
+
+<main>
+  <div class="card" id="diagram"></div>
+  <p class="hint">Tocá una zona del vehículo o elegí un sistema.</p>
+  <div class="chips" id="chips"></div>
+  <input id="search" class="search" type="search" placeholder="Buscar pieza, función o síntoma" autocomplete="off">
+  <div class="count" id="count"></div>
+  <div class="list" id="list"></div>
+  <p class="foot">Información orientativa basada en manuales y guías de mantenimiento públicas. Para tu modelo, seguí siempre el manual del fabricante.</p>
+</main>
+
+<div class="backdrop" id="backdrop"></div>
+<section class="sheet" id="sheet" aria-live="polite">
+  <div class="sheet-head">
+    <div>
+      <h2 id="shName"></h2>
+      <div class="tag" id="shSys"></div>
+    </div>
+    <button class="close" id="shClose" type="button" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="sheet-body">
+    <div class="field"><h3>Dónde va</h3><p id="shLoc"></p></div>
+    <div class="field"><h3>Para qué sirve</h3><p id="shFun"></p></div>
+    <div class="field"><h3>Mantenimiento</h3><p id="shMant"></p></div>
+    <div class="field"><h3>Vida útil</h3><p id="shVida"></p></div>
+    <div class="field"><h3>Síntomas de falla</h3><ul id="shSint"></ul></div>
+    <p class="src" id="shSrc"></p>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
